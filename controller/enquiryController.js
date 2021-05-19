@@ -1,7 +1,7 @@
 const enquirySchema = require("../model/enquirySchema");
 
 //creating method for adding Contact Data
-let userContact = async (name, number, mailId, description) => {
+let addContactData  = async (name, number, mailId, description) => {
   try {
     let status = await enquirySchema({
       userName: name,
@@ -15,4 +15,4 @@ let userContact = async (name, number, mailId, description) => {
   }
 };
 
-module.exports = { userContact };
+module.exports = { addContactData };

@@ -2,6 +2,7 @@ const http = require("http");
 const app = require("./app");
 const path = require("path");
 const configEnv = require("dotenv");
+const db = require('./services/database');
 
 configEnv.config({
   path: path.join(__dirname, "config.env"),

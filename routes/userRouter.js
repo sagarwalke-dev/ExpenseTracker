@@ -4,8 +4,8 @@ const router = express.Router();
 const crud = require("../controller/userController");
 
 //EndPoint for adding data
-router.get("/addContactData",function (req,res,next) {
-     let status = crud.userContact(req.query.uName,req.query.uNumber,req.query.uMailId,req.query.uDescription);
+router.post("/addContactData",function (req,res,next) {
+     let status = crud.userContact(req.body.uName,req.body.uNumber,req.body.uMailId,req.body.uDescription);
     status.then(result =>{
         res.status(201).json({sucess:`${result}`});
     }).catch(result =>{

@@ -10,7 +10,7 @@ const Header=()=>{
                             <Navbar className="Navbar "  variant="dark" expand="lg" sticky="top">
                              <img className="logo" src="/images/icon.png" alt="i" />
                              <h3>Expense Tracker</h3>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Toggle aria-controls="basic-navbar-navgit " />
                                 <Navbar.Collapse  className="justify-content-end w-50">
                                     <Nav className="justify-content-between p-3 w-50">
                                     <Nav.Link href="#">Home</Nav.Link>

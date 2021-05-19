@@ -4,7 +4,11 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+<<<<<<< HEAD:server/package.json
     "bcrypt": "^5.0.1",
+=======
+    "cors": "^2.8.5",
+>>>>>>> dcd0c0585b58e5b24d3380c8da9b7a28311c939e:package.json
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.10",
@@ -13,7 +17,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",

@@ -1,8 +1,7 @@
-const Mail = require("./services/mailer");
+const express = require("express");
+const app = express();
 
-Mail.sendEmail(
-  "sagarwalke7030@gmail.com",
-  "Sagar",
-  "TestMail",
-  "this a test mail from node"
-);
+app.use(express.json());
+//configure router middleware here
+
+module.exports = app;

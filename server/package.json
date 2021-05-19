@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "dotenv": "^9.0.2",
+    "express": "^4.17.1",
     "nodemailer": "^6.6.0"
   },
   "devDependencies": {},

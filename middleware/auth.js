@@ -8,6 +8,7 @@ const Authentication = async (req, res, next) => {
 
     //Verify token with database
     const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+
     //Get user from database
     const user = await User.findOne({
       _id: verifyToken._id,

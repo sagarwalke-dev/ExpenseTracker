@@ -2,7 +2,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
-            <footer class="mainfooter">
+            <footer class="mainfooter " sticky="top">
                 <div class="footer-middle">
                     <div class="container">
                         <div class="row">

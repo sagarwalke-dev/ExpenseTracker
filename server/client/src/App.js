@@ -1,11 +1,11 @@
 import React from 'react'
-import './App.css';
 import Footer from './components/Footer'
-import 'bootstrap/dist/css/bootstrap.css';
+import Header from './components/Header'
 
 function App() {
   return (
     <>
+    <Header/>
     <Footer/>
     </>
   );

@@ -3,6 +3,6 @@ const app = express();
 
 app.use(express.json());
 //configure router middleware here
-
-console.log("sagar test msg in app");
+var router=require('./routes/userRouter');
+app.use('/',router);
 module.exports = app;

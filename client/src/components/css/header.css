@@ -1,14 +1,11 @@
 
 .Navbar{
-    background-image: linear-gradient(to top,rgb(7, 7, 7)10%,rgb(22, 22, 22)80%,rgb(48, 56, 59)10%);
     font-size: 140%; 
-
-    color: rgb(48, 56, 59);
+    font-weight: 500;
+    background-image: linear-gradient(to bottom,#0275d8 0%,#036ecc 30%);
 }
 .logo{
-    height:6%;
-    width: 6%;
-    margin-left: 3%;
-    margin-right: 3%;
-
+    height:77%;
+    width: 7%;
+  
 }

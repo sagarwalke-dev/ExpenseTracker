@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar,Nav } from 'react-bootstrap';
 import "./css/header.css";
-import logo from './images/icon.png'
+import logo from './images/icon2.webp'
 const Header=()=>{
  
     return(
@@ -9,13 +9,14 @@ const Header=()=>{
         <div>
                 <div className="row">
                     <div className="col-md-12 bg">
-                            <Navbar className="Navbar "  variant="dark" expand="lg" sticky="top">
+                            <Navbar className="Navbar " bg="primary" expand="lg" sticky="top">
+                            <h3>EXPENSE</h3>
                              <img className="logo" src={logo} alt="i" />
-                             <h3>Expense Tracker</h3>
+                              <h3>TRACKER</h3>
                                 <Navbar.Toggle aria-controls="basic-navbar-navgit " />
                                 <Navbar.Collapse  className="justify-content-end w-50">
-                                    <Nav className="justify-content-between p-3 w-50">
-                                    <Nav.Link href="#">Home</Nav.Link>
+                                    <Nav className="justify-content-around  w-75">
+                                    <Nav.Link href="#"><i class="fa fa-home"></i>Home</Nav.Link>
                                     <Nav.Link href="#">Contact Us</Nav.Link>
                                     <Nav.Link href="#">Registration</Nav.Link>
                                     <Nav.Link href="#">Login</Nav.Link>

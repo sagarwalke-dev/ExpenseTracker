@@ -1,18 +1,18 @@
-
-.Navbar{
-    font-size: 140%; 
+.navbar {
+    /* background-color: rgb(243, 204, 204); */
+    padding: auto;
     font-weight: 500;
-    background-color:rgb(243, 204, 204);
-    color: rgb(1, 41, 18);
-    width:100%;
+    color: rgb(0, 0, 0);
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.logo{
-    height:50px;
+
+.logo {
+    height: 50px;
     width: 50px;
-    margin-left:5%;
-  
+    margin-left: -10px;
 }
-h3{
-    font-size: 110%;
+
+.title {
+    margin-top: 10px;
 }

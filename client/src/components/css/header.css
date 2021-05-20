@@ -1,0 +1,11 @@
+
+.Navbar{
+    font-size: 140%; 
+    font-weight: 500;
+    background-image: linear-gradient(to bottom,#0275d8 0%,#036ecc 30%);
+}
+.logo{
+    height:77%;
+    width: 7%;
+  
+}

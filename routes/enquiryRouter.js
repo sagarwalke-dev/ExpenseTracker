@@ -4,20 +4,20 @@ const router = express.Router();
 const crud = require("../controller/enquiryController");
 
 //EndPoint for adding data
-router.post("/submitContactUs", function (req, res, next) {
-  let status = crud.userContact(
-    req.body.uName,
-    req.body.uNumber,
-    req.body.uMailId,
-    req.body.uDescription
-  );
-  status
-    .then((result) => {
-      res.status(201).json({ success: `${result}` });
-    })
-    .catch((result) => {
-      res.status(204).json({ error: `${result}` });
-    });
+router.post("/submitContact", function (req, res, next) {
+  const { uName, uNumber, uMailId, uDescription } = req.body;
+  if (!uName || !uNumber || !uMailId || !uDescription) {
+    res.status(422).json({ error: `Kindly fill all the details` });
+  } else {
+    let status = crud.addContactData(uName, uNumber, uMailId, uDescription);
+    status
+      .then((result) => {
+        res.status(200).json({ success: `${result}` });
+      })
+      .catch((result) => {
+        res.status(204).json({ error: `${result}` });
+      });
+  }
 });
 
 module.exports = router;

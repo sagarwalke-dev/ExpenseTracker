@@ -1,27 +1,45 @@
 //load modules.
-const person=require('../model/userSchema');
+const User=require('../model/userSchema');
 const db=require('../services/database');
 const bcrypt=require('bcrypt');
 
 
-//add book details
-let addPerson=async(name,email,contact,work,password,gender)=>{
-    try{
-         //PASSWORD ENCRPTING
-    const passwordHash=await bcrypt.hash(password,10);
-    console.log(passwordHash)
-   
-    let add= await new person({userName:name,userEmail:email,userContact:contact,userWork:work,userPassword:passwordHash,userGender:gender}).save();
-    return "Added Succesfully."
-}
-    catch(error){
-        console.log('ERROR OCCURED :'+error);
-    }
-}
+let userRegistration = async (req, res, next) => {
+    const { name, email, contact, work, password, gender } = req.body;
+ 
+   try {
+     if (!name || !email || !contact || !work || !password || !gender) {
+       return res.status(422).json({ error: "Please fill all data" });
+     }
+     const userExist = await User.findOne({ userEmail: email });
+     if (userExist) {
+       return res.status(422).json({ error: "Email already exist" });
+     }
+  //PASSWORD ENCRPTING
+  const passwordHash=await bcrypt.hash(password,10);
+  console.log(passwordHash)
+     const user = new User({
+       userName: name,
+       userEmail: email,
+       userContact: contact,
+       userWork: work,
+       userPassword: passwordHash,
+       userGender: gender,
+     });
+ 
+     const response = await user.save();
+     if (response) {
+       return res.status(201).json({ message: "User registered successfully" });
+     } else {
+       return res.status(500).json({ error: "User registration failed" });
+     }
+   } catch (err) {
+     res.status(500).json({ error: "Something went wrong" });
+     console.log(err);
+   }
+ };
 
-//export methods
-module.exports={addPerson};
-const schema = require('../model/userSchema');
+
 
 
 
@@ -40,4 +58,4 @@ let userContact = async (name,number,mailId,description)=>{
 }
 
 
-module.exports={userContact}
+module.exports={userRegistration,userContact}

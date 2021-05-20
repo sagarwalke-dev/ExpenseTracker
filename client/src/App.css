@@ -1,6 +1,10 @@
- div {
-    padding: 3px 0;
-    background: #333;
-    font-size: 15px;
-    color: #0894d1;
-  }
+ /* div {
+   padding: 3px 0;
+   background: #333;
+   font-size: 15px;
+   color: #0894d1;
+ } */
+
+ body {
+   background-color: #E7E7E7;
+ }

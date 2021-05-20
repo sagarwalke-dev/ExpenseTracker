@@ -13,7 +13,16 @@ if (process.env.NODE_ENV == "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
+const enquiryRouter = require("./routes/enquiryRouter");
+const userRouter = require("./routes/userRouter");
+const cors = require("cors");
+const db = require("./services/database");
 
+app.use(cors());
 app.use(express.json());
 //configure router middleware here
+
+app.use("/", enquiryRouter);
+app.use("/", userRouter);
+
 module.exports = app;

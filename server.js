@@ -3,6 +3,7 @@ const app = require("./app");
 const path = require("path");
 const configEnv = require("dotenv");
 const express = require("express");
+const db = require("./services/database");
 
 configEnv.config({
   path: path.join(__dirname, "config.env"),

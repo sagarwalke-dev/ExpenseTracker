@@ -17,6 +17,14 @@ router.post("/registration", function (req, res, next) {
     console.log("end registering  new user...");
   });
 
+  //Adding Expenses
+  router.post("/addingExpenses",function(req,res,next)
+  {
+    console.log("Adding Expenses...");
+    userController.addExpenses(req,res,next)
+    console.log("Adding Complited...");
+  })
+
 //EndPoint for adding data
 router.get("/addContactData",function (req,res,next) {
      let status = crud.userContact(req.query.uName,req.query.uNumber,req.query.uMailId,req.query.uDescription);

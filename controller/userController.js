@@ -39,6 +39,19 @@ let userRegistration = async (req, res, next) => {
    }
  };
 
+//Adding Expenses
+let addExpenses = async (req, res, next) => {
+  const { userEmail, itemName,category,amount ,expenseDate} = req.body;
+  console.log(userEmail, itemName,category,amount,expenseDate);
+  
+  //Adding based on perticuler user
+  let validUser = await User.findOne({ userEmail: userEmail });
+  if(validUser)
+{
+      let expense = await validUser.generateAuthToken(itemName,category,amount,expenseDate);
+      return res.status(200).json({ message: "Added successfully" });
+    } 
+};
 
 
 
@@ -58,4 +71,4 @@ let userContact = async (name,number,mailId,description)=>{
 }
 
 
-module.exports={userRegistration,userContact}
+module.exports={userRegistration,addExpenses,userContact}

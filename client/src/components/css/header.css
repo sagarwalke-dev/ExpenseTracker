@@ -16,3 +16,17 @@
 h3{
     font-size: 110%;
 }
+.sidenav---sidenav---_2tBP {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1006;
+  min-width: 64px;
+  background: #7ce3fd;
+  -webkit-transition: min-width 0.2s;
+  -moz-transition: min-width 0.2s;
+  -o-transition: min-width 0.2s;
+  -ms-transition: min-width 0.2s;
+  transition: min-width 0.2s;
+}

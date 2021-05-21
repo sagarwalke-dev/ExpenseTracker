@@ -13,7 +13,10 @@
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-icons": "^4.2.0",
+=======
+>>>>>>> 78aa084a57778a9b17d7362d28bcf5e8cdcfbb1c
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "reactstrap": "^8.9.0",

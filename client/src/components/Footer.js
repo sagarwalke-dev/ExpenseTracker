@@ -1,32 +1,31 @@
-import React from 'react';
+import React from "react";
+import "./css/footer.css";
 const Footer = () => {
-    return (
-        <>
-            <footer class="mainfooter " sticky="top">
-                <div class="footer-middle">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 copy">
-                                <p class="text-center">&copy; Copyright 2021 - Expense Tracker.  All rights reserved.</p>
-                            </div>
-                        </div>
+  return (
+    <>
+      <footer className=' mainfooter '>
+        <div className='footer-middle'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-12 copy'>
+                <p className='text-center'>
+                  &copy; Copyright 2021 - Expense Tracker. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
+      {/* <Form>
 
-                    </div>
-                </div>
-            </footer>
-
-            {/* <Form>
-
-                    <div class="copyright text-center">
+                    <div className="copyright text-center">
                         Copyright &copy; 2021 <span>Expense Tracker</span>
                     </div>
                     
                 </Form> */}
-
-
-        </>
-    );
-}
+    </>
+  );
+};
 
 export default Footer;

@@ -1,18 +1,34 @@
-
-.Navbar{
-    font-size: 140%; 
+.navbar {
+    /* background-color: rgb(243, 204, 204); */
+    padding: auto;
     font-weight: 500;
-    background-color:rgb(243, 204, 204);
-    color: rgb(1, 41, 18);
-    width:100%;
+    color: rgb(0, 0, 0);
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.logo{
-    height:50px;
+
+.logo {
+    height: 50px;
     width: 50px;
-    margin-left:5%;
-  
+    margin-left: -10px;
 }
-h3{
-    font-size: 110%;
+<<<<<<< HEAD
+.sidenav---sidenav---_2tBP {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1006;
+  min-width: 64px;
+  background: #7ce3fd;
+  -webkit-transition: min-width 0.2s;
+  -moz-transition: min-width 0.2s;
+  -o-transition: min-width 0.2s;
+  -ms-transition: min-width 0.2s;
+  transition: min-width 0.2s;
+=======
+
+.title {
+    margin-top: 10px;
+>>>>>>> 78aa084a57778a9b17d7362d28bcf5e8cdcfbb1c
 }

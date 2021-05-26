@@ -3,10 +3,6 @@
     --input-padding-y: .75rem;
 }
 
-/* .card-body{
-    background-color:; 
-}*/
-
 .card-signin {
     border: 0;
     border-radius: 1rem;
@@ -31,8 +27,6 @@
 
 .card-signin .card-body {
     padding: 2rem;
-    margin-bottom: -55px;
-    margin-top: -20px;
 }
 
 .form-signin {
@@ -41,7 +35,7 @@
 
 .form-signin .btn {
     font-size: 80%;
-    border-radius: 0.5rem;
+    border-radius: 5rem;
     letter-spacing: .1rem;
     font-weight: bold;
     padding: 1rem;
@@ -155,14 +149,4 @@
 
 .error-message {
     font-size: small;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    color: #0473E9;
-    text-decoration: none;
 }

@@ -1,0 +1,23 @@
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: rgb(53, 245, 53);
+}
+
+.modal-dialog{
+width: 1500px;
+}
+
+.btn-secondary{
+width: 72px;
+background-color: rgb(155, 209, 73);
+}
+
+.btn-secondary:hover{
+    background-color: rgb(211, 161, 95);
+}
+
+.btn-danger{
+    background-color: red;
+}
+.btn-danger:hover{
+    background-color: rgb(145, 30, 30);
+}
